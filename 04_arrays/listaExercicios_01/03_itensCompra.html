@@ -8,11 +8,17 @@
     //A lista completa de compras é: fruta1, fruta2, fruta3, bebida1, bebida2, bebida3.
 
     //ENTRADA
-
+const fruta1 = prompt(`Insira a primeira fruta para sua compra:`);
+const fruta2 = prompt(`Insira a segunda fruta para a sua compra:`);
+const fruta3 = prompt(`Insira a terceira fruta para sua compra:`);
+const bebida1 = prompt(`Insira a primeira bebida:`);
+const bebida2 = prompt(`Insira a segunda fruta para sua compra`);
+const bebida3 = prompt(`Insira a terceira bebida para sua compra:`);
 
     //PROCESSAMENTO
-
+let arrayFrutas = [fruta1, fruta2,  fruta3];
+let arrayBebidas = [bebida1,  bebida2,  bebida3];
 
     //SAÍDA
-
+    document.write(`As lista completa de compras é: ${arrayFrutas.join(" - ")} & ${arrayBebidas.join( " - ")}`)
 </script>

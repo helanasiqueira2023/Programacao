@@ -4,11 +4,17 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2).
 
     //ENTRADA
-
+let num1 = Number(prompt(`Digite 1 número inteiro:`));
+let num2 = Number(prompt(`Digite o 2 número inteiro:`));
 
     //PROCESSAMENTO
-
-
+let arrayVazio = [];
+if(num1 > num2){
+     arrayVazio = [num2, num1]
+    }
+else { 
+    arrayVazio = [num1, num2]
+}
     //SAÍDA
-    
+    document.write(`Os elemetos em ordem crescente são: ${arrayVazio.join(" - ")}`)
 </script>
