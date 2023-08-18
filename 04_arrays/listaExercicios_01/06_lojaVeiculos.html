@@ -2,21 +2,35 @@
     //Problema: Loja de veículos
     //Crie os seguintes arrays:
     // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
-    // let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    // let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
     // let carrosHatch = ["308", "Focus", "i30"];
-    
+
     //Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
 
     //Apresente a lista final de cada tipo de veículo.
 
     //ENTRADA
-let carroosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
-let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fushion"];
-let carrosHatch = ["308", "Focus", "i30"];
-let veiculo = prompt(`Informe mais três veículos para serem inseridos:`)
-    //PROCESSAMENTO
+    let carroosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fushion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    let veiculo = prompt(`Informe três veículos para serem inseridos:`);
+    let veiculos = prompt(`Identifique o tipo de veículo que deseja inserir: SUV - SEDAN | HATCH:`);
 
+    //PROCESSAMENTO
+    if (carroosSUV == 1) carroosSUV.push(veiculo);
+    else if (carrosSUV == 2) carrosSedan.push(veiculos);
+    else if (carroosSUV == 3) carrosHatch.push(veiculo);
+
+    if (carrosSedan == 1) carrosSUV.push(veiculo)
+    else if (carrosSedan == 2) carrosSedan.push(veiculo);
+    else if (carrosSedan == 3) carrosSedan.push(veiculo);
+
+    if (carrosHatch == 1) carroosSUV.push(veiculo)
+    else if (carrosHatch == 2) carrosSedan.push(veiculo)
+    else if (carrosHatch == 3) carrosHatch.push(veiculo)
 
     //SAÍDA
-
+    document.write(`A lista final do SuVs é: ${carroosSUV.join(", ")}`)
+    document.write(`A lista final de Sedan possui: ${carrosSedan.join(", ")}`)
+    document.write(`A lista final de Hatch possui: ${carrosHatch.join(", ")}`)
 </script>

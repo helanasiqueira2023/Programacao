@@ -10,13 +10,10 @@ const carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
 const carro = prompt(`Qual carro deseja remover da lista?`);
 
     //PROCESSAMENTO
-
-if(carrosSUV){
-    carrosSUV.splice(carro)
-}
-
+const posicao = carrosSUV.indexOf(carro)
+carrosSUV.splice(posicao, 1)
 
     //SAÍDA
-alert(`Lista antiga: ${["Tiggo", "Sportage", "Tucson", "EcoSport"]}`);
-alert(`A nova lista é: ${carrosSUV}`)
+alert(`Lista antiga: ${["Tiggo", "Sportage", "Tucson", "EcoSport"].join(", ")}`);
+alert(`A nova lista é: ${carrosSUV.join(", ")}`)
 </script>
